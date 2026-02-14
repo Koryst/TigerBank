@@ -5,6 +5,8 @@ public class Category {
     private OperationType type;  // переименовать с operationType на type
     private String name;
 
+    public Category() { }
+
     public Category(Integer id, OperationType type, String name) {
         if (name == null || name.trim().isEmpty()) {
             throw new IllegalArgumentException("Category name cannot be empty");

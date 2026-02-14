@@ -62,7 +62,6 @@ public class TigerBankConsole {
     }
 
     private String readChoice() {
-        // Просто читаем строку, без лишней логики
         return new java.util.Scanner(System.in).nextLine().trim();
     }
 }

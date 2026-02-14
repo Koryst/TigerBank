@@ -11,6 +11,8 @@ public class Operation {
     private LocalDate date;
     private String description;
 
+    public Operation() { }
+
     public Operation(Integer id, OperationType type, Integer bankAccountId,
                      Integer categoryId, double amount, LocalDate date,
                      String description) {

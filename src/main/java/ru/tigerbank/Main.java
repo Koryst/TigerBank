@@ -12,7 +12,7 @@ public class Main {
         System.setOut(new PrintStream(System.out, true, StandardCharsets.UTF_8));
         System.setErr(new PrintStream(System.err, true, StandardCharsets.UTF_8));
 
-        System.out.println("🚀 Запуск ТигрБанк...");
+        System.out.println("Запуск ТигрБанк...");
 
         // Создаем контекст Spring на основе конфигурации
         try (AnnotationConfigApplicationContext context =

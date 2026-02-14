@@ -5,6 +5,8 @@ public class BankAccount {
     private String name;
     private double balance;
 
+    public BankAccount() { }
+
     public BankAccount(Integer id, String name) {
         if (name == null || name.trim().isEmpty()) {
             throw new IllegalArgumentException("Account name cannot be empty");

@@ -4,12 +4,19 @@ import ru.tigerbank.domain.BankAccount;
 import ru.tigerbank.domain.Category;
 import ru.tigerbank.domain.Operation;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class DataSnapshot {
     private final List<BankAccount> accounts;
     private final List<Category> categories;
     private final List<Operation> operations;
+
+    public DataSnapshot() {
+        this.accounts = new ArrayList<>();
+        this.categories = new ArrayList<>();
+        this.operations = new ArrayList<>();
+    }
 
     public DataSnapshot(
             List<BankAccount> accounts,

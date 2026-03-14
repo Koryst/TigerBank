@@ -1,7 +1,10 @@
 package ru.tigerbank.domain;
 
+import lombok.Getter;
+
 import java.time.LocalDate;
 
+@Getter
 public class Operation {
     private Integer id;
     private OperationType type;
@@ -30,11 +33,4 @@ public class Operation {
         this.description = description;
     }
 
-    public Integer getId() { return id; }
-    public OperationType getType() { return type; }
-    public Integer getBankAccountId() { return bankAccountId; }
-    public Integer getCategoryId() { return categoryId; }
-    public double getAmount() { return amount; }
-    public LocalDate getDate() { return date; }
-    public String getDescription() { return description; }
 }

@@ -7,11 +7,7 @@ import java.util.Optional;
 
 public interface BankAccountService {
 
-    // Создание нового счета (ID сгенерирует репозиторий)
-    BankAccount createAccount(String name);
-
-    // Создание счета с заданным ID (для импорта)
-    BankAccount createAccount(Integer id, String name);
+    void addBankAccount(BankAccount bankAccount);
 
     // Чтение
     Optional<BankAccount> getAccount(Integer id);

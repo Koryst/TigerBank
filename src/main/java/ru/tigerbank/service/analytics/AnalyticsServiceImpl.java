@@ -95,7 +95,7 @@ public class AnalyticsServiceImpl implements AnalyticsService {
         List<Operation> operations = operationRepository.findByDateBetween(from, to).stream()
                 .filter(op -> op.getType() == type)
                 .filter(op -> accountId == null || op.getBankAccountId().equals(accountId))
-                .collect(Collectors.toList());
+                .toList();
 
         // Группируем по категориям
         Map<Integer, Double> sumByCategoryId = operations.stream()

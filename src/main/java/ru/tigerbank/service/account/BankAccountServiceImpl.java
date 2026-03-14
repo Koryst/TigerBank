@@ -24,15 +24,8 @@ public class BankAccountServiceImpl implements BankAccountService {
     }
 
     @Override
-    public BankAccount createAccount(String name) {
-        BankAccount account = new BankAccount(null, name);
-        return accountRepository.save(account);
-    }
-
-    @Override
-    public BankAccount createAccount(Integer id, String name) {
-        BankAccount account = new BankAccount(id, name);
-        return accountRepository.save(account);
+    public void addBankAccount(BankAccount bankAccount) {
+        accountRepository.save(bankAccount);
     }
 
     @Override

@@ -14,16 +14,12 @@ public class Main {
 
         System.out.println("Запуск ТигрБанк...");
 
-        // Создаем контекст Spring на основе конфигурации
         try (AnnotationConfigApplicationContext context =
                      new AnnotationConfigApplicationContext(AppConfig.class)) {
 
             System.out.println("✅ Spring контекст загружен");
 
-            // Получаем главный консольный класс из контекста
             TigerBankConsole console = context.getBean(TigerBankConsole.class);
-
-            // Запускаем консольное приложение
             console.start();
         }
 
